@@ -163,8 +163,6 @@ class SVM:
 
         w2 = np.dot(self.w, self.w)
         J = self.allsum(J)
-        #J[1:,1:] += (1.0/w2) * np.identity(self.M) \
-        #        - (2.0/w2**1.5) * self.w[:,None]*self.w[None,:]
         J[1:,1:] += (1.0/w2) * np.identity(self.M) \
                 - (2.0*w2**-2) * self.w[:,None]*self.w[None,:]
 
