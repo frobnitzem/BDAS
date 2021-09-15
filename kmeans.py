@@ -4,6 +4,8 @@ import numpy as np
 import numpy.linalg as la
 import numpy.random as random
 
+# FIXME: this routine needs to distribute the
+# choice of K centers among processors.
 def choose_K(X, K, Ntot):
     #if C.rank == 0:
     #else:

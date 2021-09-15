@@ -1,3 +1,6 @@
+# Example SVM solution plotting code from scikit-learn
+# modified to show results of bayes.SVM.
+#
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import svm
