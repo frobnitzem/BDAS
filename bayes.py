@@ -201,8 +201,7 @@ def Ndiff(f, b, x0):
         x1[i] = x0[i]
     return ih*(f1-f0)
 
-def test1():
-    N, M = 10, 4
+def test1(N=10, M=4):
     y = np.arange(N) < N/2 # 0 or 1 for now
     x = random.standard_normal((N,M)) + 1.0 + y[:,None]
     y = 2*y-1 # -1 or 1
@@ -275,5 +274,5 @@ def test2(fname):
     print(S.w)
 
 if __name__=="__main__":
-    #test1()
-    test2("a1a.t")
+    test1(1000, 2)
+    #test2("a1a.t")
